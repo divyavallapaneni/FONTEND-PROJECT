@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Form</title>
+  </head>
+  <body>
+    <div
+      class="container"
+      style="border: 2px solid gray; width: 40%; margin: 20px; padding: 20px" >
+      <header style="text-align: center"><h1>Signup Details</h1></header>
+      <form action="/submit" method="post">
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <!-- Date Of Birth -->
+        <label for="name">Date Of Birth:</label>
+        <input type="date" required /><br /><br />
+
+        <!-- Age -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required /><br /><br />
+
+        <!-- College Name -->
+        <label for="college">College Name:</label>
+        <input type="text" id="college" name="college" required /><br /><br />
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required /><br /><br />
+
+        <!-- Gender -->
+        <fieldset style="width: 20%">
+          <legend>Gender:</legend>
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label><br />
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            required
+          />
+          <label for="female">Female</label><br />
+          <input type="radio" id="other" name="gender" value="other" required />
+          <label for="other">Other</label><br />
+        </fieldset>
+        <br />
+
+        <!-- Skills -->
+        <fieldset style="width: 30%">
+          <legend>Skills:</legend>
+          <input type="checkbox" id="html" name="skills" value="HTML" />
+          <label for="html">HTML</label><br />
+          <input type="checkbox" id="css" name="skills" value="CSS" />
+          <label for="css">CSS</label><br />
+          <input type="checkbox" id="js" name="skills" value="JavaScript" />
+          <label for="js">JavaScript</label><br />
+          <input type="checkbox" id="python" name="skills" value="Python" />
+          <label for="python">Python</label><br />
+        </fieldset>
+        <br />
+
+        <!-- Dropdown -->
+        <label for="role">Select Role:</label>
+        <select id="role" name="role" required>
+          <option value="student">Student</option>
+          <option value="employee">Employee</option></select
+        ><br /><br />
+
+        <!-- resume upload -->
+        <label> Resume :</label>
+        <input
+          type="file"
+          id="resume"
+          name="resume"
+          accept=".pdf, .doc, .docx"
+          required
+        />
+        <br /><br />
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+
+        <!-- Note -->
+        <label for="note">Note:</label><br />
+        <textarea id="note" name="note" rows="4" cols="50"></textarea
+        ><br /><br />
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
